@@ -2,11 +2,15 @@ FROM oven/bun:latest
 
 WORKDIR /app
 
+# Копіюємо тільки package.json спочатку
 COPY package.json .
-COPY bun.lockb .
+
+# Копіюємо bun.lockb, якщо він існує (використовуємо умовне копіювання)
+COPY bun.lockb* ./ 2>/dev/null || true
 
 RUN bun install --production
 
+# Копіюємо решту файлів
 COPY . .
 
 ENV PORT=3000
