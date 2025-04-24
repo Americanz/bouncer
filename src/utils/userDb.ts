@@ -4,7 +4,7 @@ import { logger } from "./logger";
 import crypto from "crypto";
 
 // Шлях до JSON файлу, який буде використовуватися як база користувачів
-const USERS_DB_PATH = path.join(process.cwd(), "users.json");
+const USERS_DB_PATH = path.join(process.cwd(), "data", "users.json");
 
 // Структура для зберігання інформації про користувача
 interface UserEntry {

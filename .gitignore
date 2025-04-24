@@ -22,5 +22,7 @@ npm-debug.log*
 .DS_Store
 Thumbs.db
 
-token.json
-user.json
+# Файли даних
+tokens.json
+users.json
+data/

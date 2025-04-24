@@ -3,7 +3,7 @@ import path from "path";
 import { logger } from "./logger";
 
 // Шлях до JSON файлу, який буде використовуватися як база токенів
-const TOKEN_DB_PATH = path.join(process.cwd(), "tokens.json");
+const TOKEN_DB_PATH = path.join(process.cwd(), "data", "tokens.json");
 
 // Структура для зберігання інформації про токен
 interface TokenEntry {
