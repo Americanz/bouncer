@@ -23,6 +23,6 @@ npm-debug.log*
 Thumbs.db
 
 # Файли даних
-tokens.json
-users.json
-data/
+# data/
+# Альтернативний підхід, якщо потрібно ігнорувати лише JSON файли в папці data:
+data/*.json
