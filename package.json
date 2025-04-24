@@ -1,0 +1,28 @@
+{
+  "name": "bouncer",
+  "version": "1.0.0",
+  "description": "JWT Authentication Service for API Protection",
+  "main": "src/server.ts",
+  "scripts": {
+    "start": "bun src/server.ts",
+    "dev": "bun --watch src/server.ts",
+    "test": "bun test",
+    "build": "bun build src/server.ts --outdir ./dist"
+  },
+  "keywords": [
+    "auth",
+    "jwt",
+    "bun",
+    "authentication",
+    "api"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/jsonwebtoken": "^9.0.9",
+    "bun-types": "latest"
+  },
+  "dependencies": {
+    "jsonwebtoken": "^9.0.2"
+  }
+}

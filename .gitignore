@@ -1,0 +1,26 @@
+# Залежності
+node_modules/
+/bun.lockb
+
+# Скомпільовані файли
+dist/
+build/
+
+# Логи
+logs/
+*.log
+npm-debug.log*
+
+# Змінні середовища
+.env
+.env.local
+.env.development
+.env.test
+.env.production
+
+# Системні файли
+.DS_Store
+Thumbs.db
+
+token.json
+user.json

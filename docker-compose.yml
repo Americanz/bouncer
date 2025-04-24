@@ -1,0 +1,22 @@
+version: '3'
+
+services:
+  auth-service:
+    build: .
+    container_name: bouncer
+    restart: unless-stopped
+    environment:
+      - PORT=3000
+      - JWT_SECRET=your-secure-jwt-secret-key
+      - ALLOWED_TOKENS=token1,token2,token3
+      - LOG_LEVEL=info
+    ports:
+      - "3000:3000"
+    # networks:
+    #   - proxy_network
+
+# Розкоментуйте, якщо потрібно підключити до існуючої мережі
+# networks:
+#   proxy_network:
+#     external: true
+#     name: traefik_proxy  # Замініть на назву вашої мережі
